@@ -1,4 +1,4 @@
-![logo](./static/logo_white.jpg)
+![logo](./static/logo_new.jpg)
 
 A lazy Python utility to store arbitrary artifacts in any docker image repository
 
