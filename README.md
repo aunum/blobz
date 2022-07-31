@@ -1,4 +1,4 @@
-# Blobz
+![logo](./static/logo_white.jpg)
 
 A lazy Python utility to store arbitrary artifacts in any docker image repository
 
