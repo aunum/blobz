@@ -6,7 +6,7 @@ import urllib.request
 from setuptools import find_packages
 from setuptools import setup
 
-REPO = "old-ocean-creature/carvel-imgpkg"
+REPO = "aunum/carvel-imgpkg"
 VERSION = "v0.29.3-arc"
 BIN_PATH = "./blobz/bin"
 
@@ -54,7 +54,7 @@ download()
 
 setup(
     name="blobz",
-    version="0.0.7",
+    version="0.0.8",
     url="https://github.com/aunum/blobz",
     project_urls={
         "Documentation": "https://github.com/aunum/blobz",
