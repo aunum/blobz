@@ -1,8 +1,8 @@
-![logo](./static/logo_new.jpg)
+![logo](./static/logo_new.png)
 
 A lazy Python utility to store arbitrary artifacts in any docker image repository
 
-## Install
+# Install
 
 ```sh
 pip install blobz
@@ -11,7 +11,7 @@ pip install blobz
 ## Prerequisites
 * Working authentication to your image registry of choice e.g. `~/.docker/config.json`
 
-## Quick Start
+# Quick Start
 
 Push some files to a docker repository and add labels to the artifact
 ```python
@@ -62,7 +62,7 @@ bar_obj = pickle.loads(byte_dict["test_obj.pkl"])
 
 More complete examples can be found in the [tests](./tests/test_api.py)
 
-## FAQ
+# FAQ
 
 __What about OCI artifacts?__
 
