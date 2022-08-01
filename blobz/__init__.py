@@ -7,7 +7,7 @@ import json
 import shutil
 import subprocess
 import tempfile
-from typing import Any, List, Optional, Dict
+from typing import Any, List, Optional, Dict, Union
 from os import listdir
 from os.path import isfile, join
 
@@ -28,8 +28,8 @@ class ObjEncoderType(Enum):
 
 def push(
     uri: str,
-    file: Optional[str | List[str]] = None,
-    obj: Optional[Any | List[Any]] = None,
+    file: Optional[Union[str, List[str]]] = None,
+    obj: Optional[Union[Any, List[Any]]] = None,
     obj_map: Optional[Dict[str, Any]] = None,
     obj_encoder: ObjEncoderType = ObjEncoderType.JSON_PICKLE,
     labels: Optional[Dict[str, str]] = None,
@@ -39,8 +39,8 @@ def push(
 
     Args:
         uri (str): URI of the repository
-        file (Optional[str  |  List[str]], optional): Filepath(s) to push. Defaults to None.
-        obj (Optional[Any  |  List[Any]], optional): Object(s) to push. Defaults to None.
+        file (Optional[str | List[str]], optional): Filepath(s) to push. Defaults to None.
+        obj (Optional[Any | List[Any]], optional): Object(s) to push. Defaults to None.
         obj_map (Optional[Dict[str, Any]], optional): Map of filename to object(s) to push. Defaults to None.
         obj_encoder (ObjEncoderType, optional): Encoder to use for objects. Defaults to ObjEncoderType.JSON_PICKLE.
         labels (Optional[Dict[str, str]], optional): Labels to add to the artifact. Defaults to None.
