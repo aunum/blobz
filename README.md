@@ -57,7 +57,7 @@ Pull it back out as bytes and load it with pickle
 import pickle
 
 byte_dict = blobz.pull_bytes("myrepo/bar:v2")
-bar_obj = pickle.loads(byte_dict["test_obj.pkl"])
+bar_obj = pickle.loads(byte_dict["my_obj.pkl"])
 ```
 
 More complete examples can be found in the [tests](./tests/test_api.py)
