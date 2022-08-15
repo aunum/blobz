@@ -54,7 +54,7 @@ download()
 
 setup(
     name="blobz",
-    version="0.0.8",
+    version="0.0.13",
     url="https://github.com/aunum/blobz",
     project_urls={
         "Documentation": "https://github.com/aunum/blobz",

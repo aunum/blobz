@@ -5,5 +5,5 @@ test:
 
 .PHONY: dist
 dist:
-	python -m build
+	python -m build --sdist
 	twine upload dist/*
